@@ -1,20 +1,4 @@
-/* 
 
-================
-COLORS REFERENCE
-================
-
-Background: #2a3a3f
-Background: rgba(42,58,63,0.8)
-Red color: #ec5552
-White color: #f6f6f6
-Black color: #3b3b3b
-
-
-*/
-
-
-/* GLOBAL STYLES */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700');
 
@@ -25,6 +9,7 @@ body {
   color: #3b3b3b;
   margin: 0;
   padding: 0;
+  background-color: #3b3b3b!important;
 }
 
 /* NAV BAR */
@@ -37,11 +22,7 @@ body {
   max-width: 35px;
 }
 
-@media only screen and (min-width: 768px) {
-  .navbar-brand img {
-    max-width: 50px;
-  }
-}
+
 
 .navbar-inverse .navbar-nav nav-link {
   color: #f6f6f6;
@@ -109,11 +90,14 @@ html, body {
 /* SERVICES PAGE */
 
 .dev {
+  background-color:#DBCCC6;
   border-top: 5px solid #ec5552;
   border-bottom: 5px solid #ec5552;
   border-left: 10px solid #ec5552;
   border-right: 10px solid #ec5552;
-  padding: 5%;
+  padding: 3%;
+  margin:2%;
+  border-radius:5% 30% 5%;
   width: inherit;
 }
 
@@ -133,23 +117,6 @@ html, body {
   border-top: 10px solid #ec5552;
 }
 
-/* WORK PAGE */
-
-.work h2 {
-  font: lighter 2em "Montserrat", sans-serif;
-  margin: .5em 0 0;
-}
-
-.work h3 {
-  font: italic 1em "Montserrat", sans-serif;
-  margin: 1em 0;
-}
-
-.work p {
-  height: 10em;
-}
-
-/* HIRE PAGE */
 
 #ourstory {
   background: #ec5552;
@@ -189,4 +156,20 @@ button.btn.btn-lg.btn-white:focus {
 footer {
   background: #3b3b3b;
   color: #f6f6f6;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 50px;
+  }
+
+  .dev{
+    width:85vh;
+  }
+  #ourstory{
+    width:85vh;
+  }
+  .bg{
+    width:85vh;
+  }
 }
